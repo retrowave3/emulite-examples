@@ -26,7 +26,7 @@ application = IOSApplication.load(
 emulator = application.emulator
 module = application.module
 keychain_hook = emulator.intercept("_SecItemCopyMatching", return_empty_keychain)
-module.call_offset(0x99FF380)
+module.call_address(0x99FF380)
 objc = application.objc
 du_sanwa_sdk = objc.require_class("DuSanwaSDK")
 

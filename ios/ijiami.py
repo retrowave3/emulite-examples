@@ -17,8 +17,8 @@ application = IOSApplication.load(
 )
 emulator = application.emulator
 module = application.module
-module.call_offset(0x38EAD94)
-module.call_offset(0x38EFA18)
+module.call_address(0x38EAD94)
+module.call_address(0x38EFA18)
 check_hook = emulator.intercept(module.pointer_at(0x38F0004), pass_environment_check)
 objc = application.objc
 jm_box = objc.require_class("JMBox125")
