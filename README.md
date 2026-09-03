@@ -1,6 +1,6 @@
 # Emulite Examples
 
-Runnable Android and iOS examples using real native application code.
+[Emulite](https://github.com/retrowave3/emulite) examples
 
 ## Setup
 
